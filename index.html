@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icon.png"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweeralert2.min.css"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+    <script defer src="data.json"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+        <div class="preloader" id="preloader">
+            <div class="counter" id="counter">0</div>
+            <div class="text" id="text">Welcome to <span>My Portfolio</span></div>
+        </div>
+        <header id="header">
+            <div class="logo">
+                <h1>James <span>Damasco</span></h1>
+            </div>
+            <div class="menu">
+                <div id="menu_btn">
+                    <p onclick="toggleMenu(this);"><i class="fa fa-bars"></i></p>
+                </div>
+                <nav>
+                    <ul id="menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section id="section_1">
+                <div class="part_1">
+                    <img src="images/icon.png" alt="James Damasco" />
+                </div>
+                <div class="part_2">
+                    <p>
+                        Hello, <span id="visitor"></span><br />
+                        My name is <br /><b>James Damasco</b><br /> And I'm a:
+                    </p>
+                    <div class="typing_part">
+                        <p><span class="typing"></span></p>
+                    </div>
+                    <a href="#contact"><button class="btn">Hire Me <i class="fa fa-arrow-down"></i></button></a>
+                </div>
+            </section>
+
+            <section id="about">
+                <div class="part_1">
+                    <h2>About Me</h2>
+                </div>
+                <div class="part_2">
+                    <div class="image_part">
+                        <img src="images/JD1.1.png" alt="James Damasco image 2"/>
+                    </div>
+                    <div class="info">
+                        <h3>I'm James & I'm a:</h3>
+                        <marquee>Web Developer, Mobile App Developer, Game Developer & Gamer</marquee>
+                        <p>I am a dedicated professional known as [IT] in my particularly in programming skills. With a robust skills set and extensive experience. Ready to bring innovation and dedication to any team.
+                            Thank you for visiting my portfolio webpage; I eagerly anticipate the opportunity to collaborate with you.
+                            <b>Mr/Mrs/Miss. <span id="visitor">.</span></b>
+                        </p>
+                        <button class="btn" onclick="window.location.href='mailto:damascojames94@gmail.com?subject=Request%20Resume&body=Hello,%0A%0AI would like to request a copy of your resume.%0A%0AThank you!'">Request Resume</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="services">
+                <div class="part_1">
+                    <h2>My Services</h2>
+                </div>
+                <div class="part_2">
+                    <div class="box">
+                        <h4>Website Development</h4>
+                        <p>I can develop a professional and responsive website tailored to your needs, designed to be <b>attractive</b>to your customers.</p> 
+                    </div>
+                    <div class="box">
+                        <h4>Mobile App Development</h4>
+                        <p>I can build both Android and iOS native mobile applications using advance techniques to make them <b>faster</b> and ensure smooth hosting in their respective stores.</p>
+                    </div>
+                    <div class="box">
+                        <h4>Game Developer</h4>
+                        <p>I'm a passionate game developer with skills in designing and building immersive gaming experiences from concept to launch. I have a strong foundation in game mechanics, systems programming, and visual storytelling. I focus on creating engaging gameplay, polished user interfaces, and smooth real-time performance across platforms.</p>
+                    </div>
+                    <div class="box">
+                        <h4>Gamer</h4>
+                        <p>As a dedicated and knowledgeable gamer, I bring a strategic mindset, quick reflexes, and extensive experience across many titles and genres. My skills go beyond just gameplay. I also focus on team communication and leadership in high-pressure situations, as well as content creation, streaming, and community involvement. Whether I'm mastering game mechanics, improving performance, or studying changes in meta, I tackle gaming with the same commitment and precision as any professional craft.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills">
+                <div class="part_1">
+                    <h2>My Skills</h2>
+                </div>
+                <div class="part_2">
+                    <div class="info">
+                        <h3>My Creative Skills & Experience.</h3>
+                        <p>I have gained extensive knowledge and practical experience in the field of Information Technology (IT)</p>
+                    </div>
+                    <div class="card">
+                        <div class="skills">
+                            <div class="skill-name">HTML5</div>
+                            <div class="skill-bar">
+                                <div class="skill-per" per="99%" id="skill" style="max-width: 99%;"></div>
+                            </div>
+                            <div class="skill-name">CSS</div>
+                            <div class="skill-bar">
+                                <div class="skill-per" per="99%" id="skill" style="max-width: 99%;"></div>
+                            </div>
+                            <div class="skill-name">JavaScript</div>
+                            <div class="skill-bar">
+                                <div class="skill-per" per="99%" id="skill" style="max-width: 99%;"></div>
+                            </div>
+                            <div class="skill-name">JQuery</div>
+                            <div class="skill-bar">
+                                <div class="skill-per" per="99%" id="skill" style="max-width: 99%;"></div>
+                            </div>
+                        </div>
+                    <div class="button">
+                        <button class="btn" id="more_btn">
+                            More Skills <i class="fa fa-arrow-down" id="down"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="part_3" id="more_card" style="display: none;">
+                <div class="card">
+                    <div class="skill-name">Python</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="50%" id="skill" style="max-width: 99%;"></div>
+                    </div>
+                    <div class="skill-name">C#</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="60%" id="skill" style="max-width: 99%;"></div>
+                    </div>
+                    <div class="skill-name">C++</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="40%" id="skill" style="max-width: 99%;"></div>
+                    </div>
+                    <div class="skill-name">PHP</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="50%" id="skill" style="max-width: 99%;"></div>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+            <section id="projects">
+                <div class="part_1">
+                    <h2>My Projects</h2>
+                </div>
+                <div class="filter_bar">
+                    <ul>
+                        <li onclick="handleFilter(this, 'all')">All <span class="proect_count count_all">0</span>
+                        <li onclick="handleFilter(this, 'landing_page')">Landing Page <span class="project_count count_all">0</span></li>
+                        <li onclick="handleFilter(this, 'api')">API's <span class="project_count count_all">0</span></li>
+                        <li onclick="handleFilter(this, 'personal_project')">Personal Project <span class="project_count count_all">0</span></li>
+                        <li onclick="handleFilter(this, 'client_project')">Client Project <span class="project_count count_all">0</span></li>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="filter_bar mobile">
+                    <select class="custom_select" onchange="handleFilter(this, this.value)">
+                        <option value="all">All</option>
+                        <option value="landing_page">Landing Page</option>
+                        <option value="api">API's</option>
+                        <option value="personal_project">Personal Project</option>
+                        <option value="client_project">Client Project</option>
+                    </select>
+                </div>
+                <div class="part_2">
+                    <div class="loading_screen">
+                        <div class="boxLoading"></div>
+                    </div>
+                    <div class="container">
+
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <div class="part_1">
+                    <h2>Contact Me</h2>
+                </div>
+                <div class="part_2">
+                    <div class="info">
+                        <h3>Get in Touch</h3>
+                        <p>Hi there, <span id="visitor"></span>! I hope you enjoyed the view. If you have any projects or services you'd like to see executed
+              with precision and flair, don't hesitate to reach out. I'll be
+              sure to respond promptly. </p>
+              <p>
+                Even if it its just to say hello, I'd love to hear from you. Let's connect over a cup of coffee :D
+              </p>
+              <ul>
+                <li>
+                    <i class="fa fa-user"></i>
+                    <h4>Name</h4>
+                    <p>James Damasco</p>
+                </li>
+                <li>
+                    <i class="fa fa-map-marker"></i>
+                    <h4>Address</h4>
+                    <p>Las Piñas, BF International CAA</p>
+                </li>
+                <li>
+                    <i class="fa fa-phone"></i>
+                    <h4>Phone</h4>
+                    <p>=639098673641</p>
+                </li>
+                <li>
+                    <i class="fa fa-envelope"></i>
+                    <h4>Email</h4>
+                    <p>damascojames94@gmail.com</p>
+                </li>
+              </ul>
+                    </div>
+                    <div class="contact_form">
+                        <h3>Message Me:</h3>
+                        <div class="c_box">
+                            <div class="icon">
+                                <a href="damascojames94@gmail.com" target="_blank"><img src="https://raw.githubusercontent.com/Jumanjigobez/personal_portfolio/refs/heads/master/images/gmail.png" alt="Gmail Icon"/></a>
+                            </div>
+                            <div class="icon">
+                                <h1>OR</h1>
+                            </div>
+                            <div class="icon">
+                                <a href="" target="_blank"><img src="https://raw.githubusercontent.com/Jumanjigobez/personal_portfolio/refs/heads/master/images/whatsapp.png"/></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <section id="section_7">
+                    <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Las Piñas City&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://sprunkin.com/">Sprunki Phases</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>
+                    </div>
+                </section>
+
+                <div id="sidebar">
+                    <div id="sidebar_items">
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/combieeeeeeee" target="_blank"><i class="fa fa-facebook"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="footer">
+                    <h2>Coded with <i class="fa fa-heart">by James Damasco</i></h2>
+                    <p>&copy; 2025 All rights reserved.</p>
+                    <div id="top">
+                        <p>
+                            <a href="#section_1"><i class="fa fa-arrow-up"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+</body>
+</html>
+<script src="script.js"></script>
