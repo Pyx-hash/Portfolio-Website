@@ -77,6 +77,7 @@ var typed = new Typed(".typing", {
     "Game Developer",
     "Mobile App Developer",
     "Gamer",
+	"Cute",
   ],
 
   typeSpeed: 100,
